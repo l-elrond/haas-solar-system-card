@@ -1,0 +1,74 @@
+# Example Home Assistant Dashboard Configuration
+# Copy this to your dashboard YAML or use the visual editor
+
+# Full Solar System - Default Configuration
+- type: custom:solar-system-card
+  title: Solar System
+  update_interval: 1000
+  animation_speed: 1
+  show_orbits: true
+  show_labels: true
+  camera_distance: 80
+  planets:
+    - mercury
+    - venus
+    - earth
+    - mars
+    - jupiter
+    - saturn
+    - uranus
+    - neptune
+
+# Inner Solar System Only
+- type: custom:solar-system-card
+  title: Inner Planets
+  camera_distance: 40
+  show_orbits: true
+  show_labels: true
+  planets:
+    - mercury
+    - venus
+    - earth
+    - mars
+
+# Outer Solar System Only
+- type: custom:solar-system-card
+  title: Gas Giants
+  camera_distance: 150
+  animation_speed: 10
+  planets:
+    - jupiter
+    - saturn
+    - uranus
+    - neptune
+
+# Fast Time-Lapse View
+- type: custom:solar-system-card
+  title: Solar System (Time-lapse)
+  update_interval: 500
+  animation_speed: 100
+  show_orbits: true
+  show_labels: false
+
+# Minimal Configuration (uses defaults)
+- type: custom:solar-system-card
+
+# Just Earth and Mars
+- type: custom:solar-system-card
+  title: Earth & Mars
+  camera_distance: 50
+  planets:
+    - earth
+    - mars
+
+# No Orbital Paths (cleaner view)
+- type: custom:solar-system-card
+  title: Solar System
+  show_orbits: false
+  show_labels: true
+
+# Slow Motion (0.5x speed)
+- type: custom:solar-system-card
+  title: Solar System (Slow)
+  animation_speed: 0.5
+  update_interval: 2000

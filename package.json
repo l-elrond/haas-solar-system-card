@@ -1,0 +1,35 @@
+{
+  "name": "solar-system-card",
+  "version": "1.0.0",
+  "description": "Home Assistant custom card displaying an animated 3D solar system with accurate planetary positions",
+  "main": "dist/solar-system-card.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c --watch",
+    "dev": "rollup -c --watch"
+  },
+  "keywords": [
+    "home-assistant",
+    "custom-card",
+    "solar-system",
+    "astronomy",
+    "3d"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "rollup": "^4.9.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "astronomy-engine": "^2.1.19",
+    "lit": "^3.1.0",
+    "three": "^0.160.0"
+  }
+}
